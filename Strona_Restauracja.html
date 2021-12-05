@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Cookie&family=Readex+Pro:wght@300&display=swap" rel="stylesheet">
+    <title>Restauracja</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            margin: 0px;
+        }
+        :root {
+        box-sizing: border-box;
+        font-family:'Readex Pro', sans-serif;
+        color: #55552b;
+        }
+        .top-container {
+            padding: 20px;
+            margin: 20px;
+        }
+        .logo img {
+            width: 400px;
+            border: 2px solid #55552b;
+            border-radius: 1rem;
+            box-shadow: 10px 5px 5px #55552b;
+        }
+        .logo {
+            float: left;
+            width: 20%;
+        }
+        .order-book {
+            float: left;
+            width: 80%;
+            margin-right: 70px;
+        }
+        .order-book a {
+            padding: 20px 50px 20px 50px;
+            background-color: white;
+            border-radius: 3rem;
+            border: 2px solid #55552b;
+            text-decoration: none;
+            margin: 10px;
+            margin-right: 30px;
+            font-size: 2rem;
+            color: #55552b;
+            transition: all 0.3s ease-out;
+        }
+        .nav-top-right {
+            display: flex;
+            justify-content: right;
+            text-align: right;
+        }
+        .socials {
+            word-spacing: 20px;
+        }
+        .fab {
+            color: #55552b;
+            transition: all 0.3s ease-out;
+        }
+        .order-book a:hover {
+            background-color: #55552b;
+            color: white;
+        }
+        .fab:hover {
+            color:#c3c388;
+        }
+        .menu {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+        .menu ul li {
+            text-decoration: none;
+            font-size: 1.7rem;
+            display: inline-block;
+            padding: 20px 60px 20px 60px;
+            background-color: #55552b;
+            color: white;
+            margin-right: 40px;
+            margin: 15px;
+            border-radius: 3rem;
+            transition: all 0.3s ease-in-out;
+            margin-top: 3rem;
+        }
+        .menu ul li a {
+            text-decoration: none;
+            color: white;
+        }
+        .menu ul li:hover {
+            background-color: white;
+            border: 2px solid #55552b;
+        }
+        .menu ul li:hover a {
+            color: #55552b;
+        }
+        #about-us {
+            margin-top: 2em;
+            background-image: url("https://cdn.pixabay.com/photo/2020/02/20/06/22/kids-4864013_960_720.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            height: 900px;
+            box-shadow: -10px -10px 25px #55552b;
+        }
+        .info {
+            text-align: center;
+            padding: 100px;
+        }
+        .info h1 {
+            font-size: 6rem;
+            color: white;
+        }
+        .text {
+            color: white;
+            font-size: 2rem;
+            width: 50%;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .menu-container {
+            text-align: center;
+        }
+        .column1 {
+            float: left;
+            width: 50%;
+            height: 500px;
+        }
+        .column2 {
+            float: right;
+            width: 50%;
+            height: 500px;
+        }
+        .menu-content {
+            text-align: left;
+            padding: 4rem 6rem;
+        }
+        .menu-content h1 {
+            text-transform: uppercase;
+            font-size: 3rem;
+            font-family: 'Alfa Slab One', cursive;
+        }
+        .menu-content ol {
+            float: left;
+            margin-right: 6rem;
+        }
+        .menu-content ul {
+            margin-top: 3.4rem;
+            list-style: "-";
+        }
+    </style>  
+</head>
+<body>
+    <header id="header">
+        <div class="top-container">
+            <div class="logo">
+                <img src="https://t4.ftcdn.net/jpg/01/89/82/95/360_F_189829596_5QFZZMh7QdUOZcaxpV5WZ0PWVdYeGQyB.jpg" alt="logo">
+            </div>
+            <div class="nav-container">
+                <div class="nav-top-right">
+                    <div class="order-book">
+                        <a href="#">Zamów z dowozem</a>
+                        <a href="#">Rezerwacja</a>
+                    </div>
+                    <div class="socials">
+                        <a href="#"><i class="fab fa-instagram fa-3x"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f fa-3x"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#about-us">O nas</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#photos">Zdjęcia</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                    <li><a href="#work">Praca</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="about-us">
+            <div class="info">
+                <h1>Najlepszy <br> Kebab W Mieście!</h1>
+                <div class="text">
+                    Dbamy o to, aby każdy znalazł w naszej restauracji coś dla siebie. Nasza karta jest krótka, lecz dopracowana i dopasowana do Waszych rozmaitych upodobań. Entuzjaści prawdziwego kebaba, studenci, osoby dbające o zdrowie, o małym czy dużym głodzie - dla każdego czeka coś specjalnego.
+                </div>
+            </div>
+        </section>
+        <section id="menu">
+            <div class="menu-container">
+                <div class="column1">
+                    <div class="menu-content">
+                        <h1>Kebab Rollo</h1>
+                        <ol>
+                            <li>Normal</li>
+                            <li>Grande</li>
+                            <li>Double Cheese</li>
+                            <li>Fryto-Rollo</li>
+                            <li>Mięsne Rollo</li>
+                            <li>Wege Rollo</li>
+                        </ol>
+                        <div class="prices">
+                            <ul>
+                                <li>14zł</li>
+                                <li>15zł</li>
+                                <li>16zł</li>
+                                <li>20zł</li>
+                                <li>19zł</li>
+                                <li>18zł</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="column2">
+                    <div class="menu-content">
+                        <h1>Kebab Rollo</h1>
+                        <ol>
+                            <li>Normal</li>
+                            <li>Grande</li>
+                            <li>Double Cheese</li>
+                            <li>Fryto-Kebab</li>
+                            <li>Mięsny Kebab</li>
+                            <li>Wege Kebab</li>
+                        </ol>
+                        <div class="prices">
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
