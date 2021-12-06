@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Cookie&family=Readex+Pro:wght@300&display=swap" rel="stylesheet">
@@ -13,7 +14,7 @@
             scroll-behavior: smooth;
         }
         body {
-            margin: 0px;
+            margin: 0;
         }
         :root {
         box-sizing: border-box;
@@ -21,8 +22,8 @@
         color: #55552b;
         }
         .top-container {
-            padding: 20px;
-            margin: 20px;
+            padding: 1.2rem;
+            margin: 1.2rem;
         }
         .logo img {
             width: 400px;
@@ -101,7 +102,7 @@
         }
         #about-us {
             margin-top: 2em;
-            background-image: url("https://cdn.pixabay.com/photo/2020/02/20/06/22/kids-4864013_960_720.jpg");
+            background-image: url("kebakback.jpg");
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center center;
@@ -115,13 +116,15 @@
         .info h1 {
             font-size: 6rem;
             color: white;
+            text-align: left;
+            margin-left: 3.2rem;
         }
         .text {
-            color: white;
+            color:white;
             font-size: 2rem;
             width: 50%;
-            text-align: center;
-            margin-left: auto;
+            text-align: left;
+            margin-left: 3.2rem;
             margin-right: auto;
         }
         .menu-container {
@@ -138,21 +141,113 @@
             height: 500px;
         }
         .menu-content {
-            text-align: left;
+            text-align: center;
             padding: 4rem 6rem;
         }
         .menu-content h1 {
             text-transform: uppercase;
             font-size: 3rem;
             font-family: 'Alfa Slab One', cursive;
+            color: white;
         }
         .menu-content ol {
             float: left;
-            margin-right: 6rem;
+            width: 40%;
+            text-align: left;
         }
         .menu-content ul {
-            margin-top: 3.4rem;
-            list-style: "-";
+            list-style: none;
+            width: 60%;
+            padding-top: 2rem;
+        }
+        .prices {
+            text-align: left;
+        }
+        .names, .prices {
+            font-size: 2rem;
+            color: white;
+        }
+        .clearfix::after {
+            content: " ";
+            display: block;
+            clear: both;
+        }
+        .space-between {
+            height: 350px;
+            text-align: center;
+            font-size: 15rem;
+            background-color: white;
+            padding: 0;
+            font-family: 'Alfa Slab One', cursive;
+            color: white;
+            background-color: #55552b;
+        }
+        .fa-pepper-hot {
+            color: #b30000;
+        }
+        .fa-seedling {
+            color: #86b300;
+        }
+        #menu {
+            box-shadow: -10px -10px 25px black;
+            background-image: url("https://img.wallpapersafari.com/tablet/2560/1700/40/1/n5O8uy.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 600px;
+        }
+        #photos {
+            box-shadow: -10px -10px 25px black;
+        }
+        .photos-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: center;
+            background-image: url("https://images.pexels.com/photos/952670/pexels-photo-952670.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .photo {
+            max-width: 500px;
+            padding: 3rem;
+            margin: 3em;
+        }
+        .photo img {
+            width: 100%;
+            border: 5px solid;
+            border-radius: 1em;
+        }
+        .description {
+            text-align: center;
+            color: white;
+            font-size: 2.3rem;
+        }
+        .praca {
+            font-size: 12rem;
+            height: 270px;
+        }
+        #contact {
+            background-color: #1a1a1a;
+            text-align: center;
+            padding: 5rem;
+            color: white;
+        }
+        #contact h1 {
+            margin: 0;
+            font-size: 3rem;
+            margin-top: 2rem;
+        }
+        #contact a {
+            display: inline-block;
+            padding: 2em;
+            font-size: 2rem;
+            text-decoration: none;
+            color: white;
+            transition: all 0.5s;
+        }
+        #contact a:hover {
+            transform: scale(1.5);
         }
     </style>  
 </head>
@@ -180,7 +275,7 @@
                     <li><a href="#menu">Menu</a></li>
                     <li><a href="#photos">Zdjęcia</a></li>
                     <li><a href="#contact">Kontakt</a></li>
-                    <li><a href="#work">Praca</a></li>
+                    <li><a href="#contact">Praca</a></li>
                 </ul>
             </div>
         </div>
@@ -194,55 +289,83 @@
                 </div>
             </div>
         </section>
+        <div class="space-between">Menu</div>
         <section id="menu">
-            <div class="menu-container">
+            <div class="menu-container clearfix">
                 <div class="column1">
                     <div class="menu-content">
                         <h1>Kebab Rollo</h1>
-                        <ol>
-                            <li>Normal</li>
-                            <li>Grande</li>
-                            <li>Double Cheese</li>
-                            <li>Fryto-Rollo</li>
-                            <li>Mięsne Rollo</li>
-                            <li>Wege Rollo</li>
-                        </ol>
+                        <div class="names">
+                            <ol>
+                                <li>Normal</li>
+                                <li>Chili</li>
+                                <li>Double Cheese</li>
+                                <li>Fryto-Rollo</li>
+                                <li>Mięsne Rollo</li>
+                                <li>Wege Rollo</li>
+                            </ol>
+                        </div>
                         <div class="prices">
                             <ul>
                                 <li>14zł</li>
-                                <li>15zł</li>
+                                <li>15zł <i class="fas fa-pepper-hot"></i></li>
                                 <li>16zł</li>
                                 <li>20zł</li>
                                 <li>19zł</li>
-                                <li>18zł</li>
+                                <li>18zł <i class="fas fa-seedling"></i></li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="column2">
                     <div class="menu-content">
-                        <h1>Kebab Rollo</h1>
-                        <ol>
-                            <li>Normal</li>
-                            <li>Grande</li>
-                            <li>Double Cheese</li>
-                            <li>Fryto-Kebab</li>
-                            <li>Mięsny Kebab</li>
-                            <li>Wege Kebab</li>
-                        </ol>
+                        <h1>Kebab</h1>
+                        <div class="names">
+                            <ol>
+                                <li>Normal</li>
+                                <li>Chili</li>
+                                <li>Double Cheese</li>
+                                <li>Fryto-Kebab</li>
+                                <li>Mięsny Kebab</li>
+                                <li>Wege Kebab</li>
+                            </ol>
+                        </div>
                         <div class="prices">
                             <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                                <li>14zł</li>
+                                <li>15zł <i class="fas fa-pepper-hot"></i></li>
+                                <li>16zł</li>
+                                <li>20zł</li>
+                                <li>19zł</li>
+                                <li>18zł <i class="fas fa-seedling"></i></li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
+        <div class="space-between">Zdjęcia</div>
+        <section id="photos">
+            <div class="photos-container">
+                <div class="photo">
+                    <img src="https://cdn.pixabay.com/photo/2016/01/22/02/06/food-1155130_960_720.jpg" alt="">
+                    <div class="description">Staranne przygotowanie</div>
+                </div>
+                <div class="photo">
+                    <img src="https://cdn.pixabay.com/photo/2016/09/30/15/14/eat-1705556_960_720.jpg" alt="">
+                    <div class="description">Żarcie jakies</div>
+                </div>
+                <div class="photo">
+                    <img src="https://cdn.pixabay.com/photo/2016/11/18/14/05/brick-wall-1834784_960_720.jpg" alt="">
+                    <div class="description">Nasz Lokal</div>
+                </div>
+            </div>
+        </section>
+        <div class="space-between praca">Kontakt/Praca</div>
+        <section id="contact">
+            <h1>Skontaktuj się z nami</h1>
+            <a href="#"><i class="fas fa-phone"></i> Telefon</a>
+            <a href="#"><i class="fas fa-envelope"></i> Email</a>
         </section>
     </main>
 </body>
